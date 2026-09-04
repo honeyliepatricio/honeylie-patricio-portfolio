@@ -2,32 +2,33 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    "./src/app/**/*.{ts,tsx}",
-    "./src/components/**/*.{ts,tsx}",
-    "./src/data/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./data/**/*.{ts,tsx}",
   ],
   theme: {
     extend: {
       colors: {
         navy: {
-          950: "#0A1420",
-          900: "#0F1E31",
-          800: "#152A44",
-          700: "#1D3A5C",
-          600: "#2A4E78",
+          950: "#050D15",
+          900: "#0B1F33",
+          800: "#13304A",
+          700: "#1C4163",
+          600: "#28527A",
         },
-        ink: "#12202F",
+        ink: "#26313B",
         stone: {
-          50: "#F8F7F4",
-          100: "#F1EFEA",
-          200: "#E5E2DB",
-          400: "#A7A296",
-          600: "#6B6459",
+          50: "#F8F5EF",
+          100: "#F1EBDE",
+          200: "#E8E0D3",
+          300: "#D9CDB8",
+          400: "#A99C87",
+          600: "#5C5346",
         },
         gold: {
-          400: "#C7A05B",
-          500: "#AD8A46",
-          600: "#8F7139",
+          400: "#D9C296",
+          500: "#C9A96E",
+          600: "#AD8A4A",
         },
       },
       fontFamily: {
