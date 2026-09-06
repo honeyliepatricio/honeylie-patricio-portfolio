@@ -159,8 +159,15 @@ export const portfolioProjects: PortfolioProject[] = [
     id: "airbnb-operations",
     title: "Airbnb & Staycation Operations",
     description:
-      "Day-to-day management of reservations, calendars, and guest communication across active listings — keeping availability accurate and guest questions answered promptly.",
-    tags: ["Reservations", "Calendar Management", "Guest Communication"],
+      "Day-to-day management of reservations, calendars, and guest communication across active listings — plus coordinated check-in/check-out logistics and guest instructions for a consistent, low-friction arrival experience.",
+    tags: [
+      "Reservations",
+      "Calendar Management",
+      "Guest Communication",
+      "Check-in Coordination",
+      "Guest Instructions",
+      "Customer Support",
+    ],
   },
   {
     id: "social-media-management",
@@ -170,13 +177,6 @@ export const portfolioProjects: PortfolioProject[] = [
     tags: ["Facebook", "Canva", "Content Scheduling"],
   },
   {
-    id: "guest-experience-system",
-    title: "Guest Experience / Check-in System",
-    description:
-      "Coordinated check-in and check-out logistics and guest instructions to create a consistent, low-friction arrival experience for guests.",
-    tags: ["Check-in Coordination", "Guest Instructions", "Customer Support"],
-  },
-      {
     id: "ai-workflow-learning",
     title: "AI Workflow Learning Project",
     description:
