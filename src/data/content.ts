@@ -176,7 +176,6 @@ export const portfolioProjects: PortfolioProject[] = [
       "Coordinated check-in and check-out logistics and guest instructions to create a consistent, low-friction arrival experience for guests.",
     tags: ["Check-in Coordination", "Guest Instructions", "Customer Support"],
   },
-  {
       {
     id: "ai-workflow-learning",
     title: "AI Workflow Learning Project",
