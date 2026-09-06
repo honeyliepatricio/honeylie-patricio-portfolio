@@ -150,6 +150,8 @@ export type PortfolioProject = {
   isLearningProject?: boolean;
   link?: string;
   linkLabel?: string;
+  secondaryLink?: string;
+  secondaryLinkLabel?: string;
 };
 
 export const portfolioProjects: PortfolioProject[] = [
@@ -175,6 +177,7 @@ export const portfolioProjects: PortfolioProject[] = [
     tags: ["Check-in Coordination", "Guest Instructions", "Customer Support"],
   },
   {
+      {
     id: "ai-workflow-learning",
     title: "AI Workflow Learning Project",
     description:
@@ -182,7 +185,9 @@ export const portfolioProjects: PortfolioProject[] = [
     tags: ["Personal Project", "Prompt Engineering", "AI Tools"],
     isLearningProject: true,
     link: "https://honeylie-patricio-portfolio.vercel.app",
-    linkLabel: "View Live Site",
+    linkLabel: "My Works",
+    secondaryLink: "https://cozyspotazurestaycation206.vercel.app/",
+    secondaryLinkLabel: "Cozy Spot Azure Staycation",
   },
 ];
 
