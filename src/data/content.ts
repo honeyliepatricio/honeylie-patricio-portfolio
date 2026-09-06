@@ -155,7 +155,7 @@ export type PortfolioProject = {
 };
 
 export const portfolioProjects: PortfolioProject[] = [
-  {
+   {
     id: "airbnb-operations",
     title: "Airbnb & Staycation Operations",
     description:
@@ -168,6 +168,9 @@ export const portfolioProjects: PortfolioProject[] = [
       "Guest Instructions",
       "Customer Support",
     ],
+    linkLabel: "My Works",
+    secondaryLink: "https://web.facebook.com/cozyspotstaycation/",
+    secondaryLinkLabel: "Cozy Spot Staycation",
   },
   {
     id: "social-media-management",
