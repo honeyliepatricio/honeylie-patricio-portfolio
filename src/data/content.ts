@@ -1,7 +1,7 @@
 /**
  * Centralized content.
  * Edit the text here to update copy across the site without touching components.
- * Nothing in this file is invented beyond what was provided — update freely as
+ * Nothing in this file is intended beyond what was provided — update freely as
  * your real experience grows.
  */
 
@@ -82,7 +82,7 @@ export const serviceGroups: ServiceGroup[] = [
     items: [
       "AI productivity tools",
       "Prompt engineering",
-      "AI-assisted workflows",
+      "AI-assisted workflow",
       "Workflow optimization",
       "Repetitive-task automation",
     ],
@@ -148,6 +148,8 @@ export type PortfolioProject = {
   description: string;
   tags: string[];
   isLearningProject?: boolean;
+  link?: string;
+  linkLabel?: string;
 };
 
 export const portfolioProjects: PortfolioProject[] = [
@@ -176,9 +178,11 @@ export const portfolioProjects: PortfolioProject[] = [
     id: "ai-workflow-learning",
     title: "AI Workflow Learning Project",
     description:
-      "A personal learning project exploring how AI tools like ChatGPT and Claude can support prompt engineering and streamline repetitive administrative tasks. This is self-directed learning, not client work.",
+      "A personal learning project exploring how AI tools like ChatGPT and Claude can support prompt engineering and streamline repetitive administrative tasks. This portfolio site itself was built using this workflow. This is self-directed learning, not client work.",
     tags: ["Personal Project", "Prompt Engineering", "AI Tools"],
     isLearningProject: true,
+    link: "https://honeylie-patricio-portfolio.vercel.app",
+    linkLabel: "View Live Site",
   },
 ];
 
@@ -211,22 +215,22 @@ export const faqItems: FAQItem[] = [
   {
     question: "What is a Healthcare Virtual Assistant?",
     answer:
-      "A Healthcare Virtual Assistant provides remote, non-clinical administrative support to doctors, clinics, and healthcare teams — things like scheduling, documentation organization, data entry, research, and email support — so clinical staff can focus on patient care.",
+      "A Healthcare Virtual Assistant provides remote, non-clinical administrative support to doctors, clinics, and healthcare teams — things like scheduling, documentation, data entry, and communication support.",
   },
   {
     question: "Are you able to provide clinical services remotely?",
     answer:
-      "No. My background as a Registered Nurse informs how I understand healthcare workflows and communication, but the support I offer is non-clinical and administrative in nature — I do not provide clinical or diagnostic services.",
+      "No. My background as a Registered Nurse informs how I understand healthcare workflows and communication, but the support I offer is non-clinical and administrative.",
   },
   {
     question: "Do you work with businesses outside of healthcare?",
     answer:
-      "Yes. Alongside healthcare administrative support, I also support Airbnb and staycation hosts with reservations and guest communication, and small businesses with social media management.",
+      "Yes. Alongside healthcare administrative support, I also support Airbnb and staycation hosts with reservations and guest communication, and small businesses with general VA and social media support.",
   },
   {
     question: "What tools do you use?",
     answer:
-      "Day to day, I work in Google Workspace (Docs, Sheets, Drive), Microsoft Office, Canva, and Facebook's business tools. I'm also currently learning AI-assisted workflow tools like ChatGPT and Claude to support prompt engineering and task automation.",
+      "Day to day, I work in Google Workspace (Docs, Sheets, Drive), Microsoft Office, Canva, and Facebook's business tools. I'm also currently learning AI-assisted workflow tools.",
   },
   {
     question: "Are you an AI automation expert?",
