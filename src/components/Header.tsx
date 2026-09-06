@@ -20,16 +20,18 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-stone-200 bg-white/95 backdrop-blur">
       <Container className="flex items-center justify-between py-4">
-        <Link
-          href="/"
-          className="font-serif text-xl text-navy-900"
-          onClick={() => setOpen(false)}
-        >
-          {site.shortName}
-          <span className="ml-2 hidden text-sm font-sans font-medium text-stone-600 sm:inline">
-            {site.role}
-          </span>
-        </Link>
+       <Link
+  href="/"
+  className="flex flex-col leading-tight"
+  onClick={() => setOpen(false)}
+>
+  <span className="font-serif text-xl text-navy-900">
+    {site.shortName}
+  </span>
+  <span className="hidden text-sm font-sans font-medium text-stone-600 sm:inline">
+    {site.role}
+  </span>
+</Link>
 
         <div className="hidden items-center gap-7 lg:flex">
           <nav aria-label="Primary">
