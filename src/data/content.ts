@@ -155,7 +155,7 @@ export type PortfolioProject = {
 };
 
 export const portfolioProjects: PortfolioProject[] = [
-   {
+  {
     id: "airbnb-operations",
     title: "Airbnb & Staycation Operations",
     description:
@@ -178,6 +178,38 @@ export const portfolioProjects: PortfolioProject[] = [
     description:
       "Ongoing management of a Facebook business page: designing graphics in Canva, writing captions, scheduling posts, and supporting promotional campaigns.",
     tags: ["Facebook", "Canva", "Content Scheduling"],
+  },
+  {
+    id: "medical-va-support",
+    title: "Medical Virtual Assistant Support",
+    description:
+      "Healthcare-focused administrative support for clinics and healthcare professionals, with an emphasis on organization, patient communication, appointment coordination, documentation, and keeping day-to-day administrative tasks running smoothly.",
+    tags: [
+      "Appointment Scheduling",
+      "Patient Communication",
+      "Calendar Management",
+      "Administrative Support",
+      "Medical Documentation",
+      "Data Entry",
+    ],
+    link: "#",
+    linkLabel: "Medical VA Workflow",
+  },
+  {
+    id: "clinical-healthcare-admin",
+    title: "Clinical & Healthcare Administrative Support",
+    description:
+      "Healthcare-trained administrative support focused on organizing information, preparing documents, maintaining accurate records, coordinating routine tasks, and supporting efficient clinic operations.",
+    tags: [
+      "Healthcare Administration",
+      "Medical Terminology",
+      "Patient Records",
+      "Documentation",
+      "Data Entry",
+      "Clinic Coordination",
+    ],
+    link: "#",
+    linkLabel: "Healthcare Admin Workflow",
   },
   {
     id: "ai-workflow-learning",
