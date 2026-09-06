@@ -69,23 +69,23 @@ export default function Hero() {
               sizes="(min-width: 1024px) 28rem, 90vw"
               className="object-cover"
             />
-          </div>
 
-          <div className="absolute -bottom-6 -right-4 flex max-w-[15rem] items-start gap-3 border border-stone-200 bg-stone-50 p-4 shadow-sm sm:-right-8">
-            <StethoscopeIcon className="mt-0.5 h-6 w-6 shrink-0 text-gold-600" />
-            <div className="text-sm leading-snug text-navy-900">
-              <p className="font-medium">RN × VA</p>
-              <p className="mt-1 text-stone-600">
-                Healthcare
-                <br />
-                Operations
-                <br />
-                Support
-              </p>
+            <div className="absolute bottom-4 right-4 flex max-w-[12rem] items-start gap-3 border border-stone-200 bg-stone-50/95 p-3.5 shadow-md backdrop-blur-sm">
+              <StethoscopeIcon className="mt-0.5 h-5 w-5 shrink-0 text-gold-600" />
+              <div className="text-sm leading-snug text-navy-900">
+                <p className="font-medium">RN × VA</p>
+                <p className="mt-1 text-stone-600">
+                  Healthcare
+                  <br />
+                  Operations
+                  <br />
+                  Support
+                </p>
+              </div>
             </div>
           </div>
 
-          <p className="mt-10 text-right font-serif text-xl italic text-gold-600 lg:mt-6">
+          <p className="mt-6 text-right font-serif text-xl italic text-gold-600">
             {site.fullName}
           </p>
         </div>
