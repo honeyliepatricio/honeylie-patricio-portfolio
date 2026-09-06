@@ -33,7 +33,7 @@ export const site = {
     upwork: "https://www.upwork.com/freelancers/your-upwork-handle",
     facebook: "https://www.facebook.com/your-facebook-page",
   },
-  profileImage: "/images/profile.jpg",
+  profileImage: "/images/profile.png",
 };
 
 export type NavItem = {
