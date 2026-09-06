@@ -50,4 +50,3 @@ export const navItems: NavItem[] = [
   { label: "My Work", href: "/portfolio" },
   { label: "FAQ", href: "/faq" },
 ];
-];
