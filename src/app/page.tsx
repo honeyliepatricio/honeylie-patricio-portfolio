@@ -66,6 +66,8 @@ export default function HomePage() {
       <CTASection
         title="Let's take the busywork off your plate."
         lede="Tell me what you need support with, and I'll follow up to talk through scope and next steps."
+        ctaLabel="Start a Conversation"
+        ctaAction="modal"
       />
     </>
   );
