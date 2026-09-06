@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import Button from "./Button";
 import Container from "./Container";
 import { site } from "@/lib/site";
+import { useContactModal } from "./ContactModalProvider";
 
 const featureHighlights = [
   { label: "Healthcare\nBackground", icon: HeartPulseIcon },
@@ -11,6 +14,8 @@ const featureHighlights = [
 ];
 
 export default function Hero() {
+  const { openModal } = useContactModal();
+
   return (
     <section className="relative overflow-hidden bg-stone-50">
       <Container className="relative grid gap-14 py-16 md:py-24 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
@@ -36,7 +41,14 @@ export default function Hero() {
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
-            <Button href="/contact">Let&apos;s Work Together</Button>
+            <button
+              type="button"
+              onClick={openModal}
+              className="inline-flex items-center gap-2 rounded bg-navy-900 px-6 py-3 text-sm font-medium text-white transition-colors duration-150 hover:bg-gold-500 hover:text-navy-900"
+            >
+              Let&rsquo;s Work Together
+              <span aria-hidden="true">&rarr;</span>
+            </button>
             <Button href="/portfolio" variant="secondary">
               View My Work
             </Button>
