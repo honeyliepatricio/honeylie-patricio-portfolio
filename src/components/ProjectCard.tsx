@@ -22,6 +22,16 @@ export default function ProjectCard({ project }: { project: PortfolioProject }) 
           </li>
         ))}
       </ul>
+      {project.link ? (
+        
+          href={project.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-5 inline-flex w-fit items-center gap-1 text-sm font-medium text-gold-600 underline-offset-4 hover:underline"
+        >
+          {project.linkLabel ?? "View Project"} →
+        </a>
+      ) : null}
     </article>
   );
 }
