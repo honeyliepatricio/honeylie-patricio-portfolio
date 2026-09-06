@@ -22,15 +22,19 @@ export default function ProjectCard({ project }: { project: PortfolioProject }) 
           </li>
         ))}
       </ul>
-      {project.link ? (
+      {project.linkLabel ? (
+        <span className="mt-5 inline-flex w-fit items-center gap-1 text-sm font-medium text-gold-600">
+          {project.linkLabel}
+        </span>
+      ) : null}
+      {project.secondaryLink ? (
         
-        <a  href={project.link}
-          
+          href={project.secondaryLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-5 inline-flex w-fit items-center gap-1 text-sm font-medium text-gold-600 underline-offset-4 hover:underline"
+          className="mt-2 inline-flex w-fit items-center gap-1 text-sm font-medium text-gold-600 underline-offset-4 hover:underline"
         >
-          {project.linkLabel ?? "View Project"} →
+          {project.secondaryLinkLabel ?? "View Project"} →
         </a>
       ) : null}
     </article>
