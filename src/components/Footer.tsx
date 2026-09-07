@@ -41,7 +41,7 @@ export default function Footer() {
             </p>
             <ul className="mt-3 space-y-2 text-sm">
               <li>
-                <a
+                
                   href={`mailto:${site.contact.email}`}
                   className="text-stone-200/80 transition-colors hover:text-white"
                 >
@@ -49,7 +49,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a
+                
                   href={site.contact.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -59,7 +59,17 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a
+                
+                  href={site.contact.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-stone-200/80 transition-colors hover:text-white"
+                >
+                  WhatsApp
+                </a>
+              </li>
+              <li>
+                
                   href={site.contact.upwork}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -69,7 +79,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a
+                
                   href={site.contact.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
