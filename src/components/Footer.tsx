@@ -42,7 +42,7 @@ export default function Footer() {
             <ul className="mt-3 space-y-2 text-sm">
               <li>
                 
-                  href={`mailto:${site.contact.email}`}
+                 <a href={`mailto:${site.contact.email}`}
                   className="text-stone-200/80 transition-colors hover:text-white"
                 >
                   {site.contact.email}
@@ -50,7 +50,7 @@ export default function Footer() {
               </li>
               <li>
                 
-                  href={site.contact.linkedin}
+                 <a href={site.contact.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-stone-200/80 transition-colors hover:text-white"
@@ -60,7 +60,7 @@ export default function Footer() {
               </li>
               <li>
                 
-                  href={site.contact.whatsapp}
+               <a   href={site.contact.whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-stone-200/80 transition-colors hover:text-white"
@@ -70,7 +70,7 @@ export default function Footer() {
               </li>
               <li>
                 
-                  href={site.contact.upwork}
+                <a  href={site.contact.upwork}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-stone-200/80 transition-colors hover:text-white"
