@@ -79,19 +79,6 @@ export default function ContactPage() {
                 </a>
               </dd>
             </div>
-            <div>
-              <dt className="text-stone-400">Facebook</dt>
-              <dd>
-                
-                  href={site.contact.facebook}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-navy-900 underline decoration-gold-500 decoration-2 underline-offset-4"
-                >
-                  View page
-                </a>
-              </dd>
-            </div>
           </dl>
         </div>
 
