@@ -32,7 +32,7 @@ export default function ContactPage() {
             <div>
               <dt className="text-stone-400">Email</dt>
               <dd>
-                <a
+                
                   href={`mailto:${site.contact.email}`}
                   className="text-navy-900 underline decoration-gold-500 decoration-2 underline-offset-4"
                 >
@@ -43,7 +43,7 @@ export default function ContactPage() {
             <div>
               <dt className="text-stone-400">LinkedIn</dt>
               <dd>
-                <a
+                
                   href={site.contact.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -54,9 +54,22 @@ export default function ContactPage() {
               </dd>
             </div>
             <div>
+              <dt className="text-stone-400">WhatsApp</dt>
+              <dd>
+                
+                  href={site.contact.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-navy-900 underline decoration-gold-500 decoration-2 underline-offset-4"
+                >
+                  Message on WhatsApp
+                </a>
+              </dd>
+            </div>
+            <div>
               <dt className="text-stone-400">Upwork</dt>
               <dd>
-                <a
+                
                   href={site.contact.upwork}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -69,7 +82,7 @@ export default function ContactPage() {
             <div>
               <dt className="text-stone-400">Facebook</dt>
               <dd>
-                <a
+                
                   href={site.contact.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
