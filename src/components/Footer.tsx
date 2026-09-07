@@ -78,16 +78,6 @@ export default function Footer() {
                   Upwork
                 </a>
               </li>
-              <li>
-                
-                  href={site.contact.facebook}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-stone-200/80 transition-colors hover:text-white"
-                >
-                  Facebook
-                </a>
-              </li>
             </ul>
           </div>
         </div>
