@@ -63,7 +63,7 @@ export default function RootLayout({
     jobTitle: site.role,
     description: site.description,
     url: site.url,
-    sameAs: [site.contact.linkedin, site.contact.upwork, site.contact.facebook],
+sameAs: [site.contact.linkedin, site.contact.upwork],
   };
 
   return (
