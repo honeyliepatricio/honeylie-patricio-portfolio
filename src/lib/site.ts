@@ -28,11 +28,12 @@ export const site = {
   ],
   // TODO: Replace placeholders with your real contact details before launch.
   contact: {
-  email: "honeyliepatriciorn@gmail.com",
-  linkedin: "https://www.linkedin.com/in/honeylie-patricio-2a63a4313/",
-  upwork: "https://www.upwork.com/freelancers/your-upwork-handle",
-  whatsapp: "https://wa.me/639244455839",
-},
+    email: "honeyliepatriciorn@gmail.com",
+    linkedin: "https://www.linkedin.com/in/honeylie-patricio-2a63a4313/",
+    upwork: "https://www.upwork.com/freelancers/your-upwork-handle",
+    facebook: "https://www.facebook.com/your-facebook-page",
+    whatsapp: "https://wa.me/639244455839",
+  },
   profileImage: "/images/profile.png",
 };
 
