@@ -1,10 +1,9 @@
 import { PortfolioProject } from "@/data/content";
-import ProjectGallery from "./ProjectGallery";
 
 export default function ProjectCard({ project }: { project: PortfolioProject }) {
   return (
-    <article className="grid overflow-hidden border border-stone-200 md:grid-cols-2">
-      <div className="flex flex-col p-7">
+    <article className="flex h-full flex-col overflow-hidden border border-stone-200">
+      <div className="flex flex-1 flex-col p-7">
         {project.isLearningProject ? (
           <span className="mb-4 inline-block w-fit border border-gold-500/50 px-3 py-1 text-xs font-medium text-gold-600">
             Personal Learning Project
@@ -39,10 +38,6 @@ export default function ProjectCard({ project }: { project: PortfolioProject }) 
             {project.secondaryLinkLabel ?? "View Project"} →
           </a>
         ) : null}
-      </div>
-
-      <div className="border-t border-stone-200 md:border-l md:border-t-0">
-        <ProjectGallery images={project.images ?? []} alt={project.title} />
       </div>
     </article>
   );
