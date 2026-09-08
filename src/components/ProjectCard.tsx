@@ -1,44 +1,60 @@
-import { PortfolioProject } from "@/data/content";
+"use client";
 
-export default function ProjectCard({ project }: { project: PortfolioProject }) {
+import { useState } from "react";
+import { PortfolioProject } from "@/data/content";
+import ProjectCard from "@/components/ProjectCard";
+
+export default function ProjectCarousel({
+  projects,
+}: {
+  projects: PortfolioProject[];
+}) {
+  const [index, setIndex] = useState(0);
+
+  const goPrev = () =>
+    setIndex((i) => (i === 0 ? projects.length - 1 : i - 1));
+  const goNext = () =>
+    setIndex((i) => (i === projects.length - 1 ? 0 : i + 1));
+
+  if (projects.length === 0) return null;
+
   return (
-    <article className="flex h-full flex-col overflow-hidden border border-stone-200">
-      <div className="flex flex-1 flex-col p-7">
-        {project.isLearningProject ? (
-          <span className="mb-4 inline-block w-fit border border-gold-500/50 px-3 py-1 text-xs font-medium text-gold-600">
-            Personal Learning Project
-          </span>
-        ) : null}
-        <h3 className="text-lg text-navy-900">{project.title}</h3>
-        <p className="mt-3 flex-1 text-sm leading-relaxed text-stone-600">
-          {project.description}
-        </p>
-        <ul className="mt-5 flex flex-wrap gap-2">
-          {project.tags.map((tag) => (
-            <li
-              key={tag}
-              className="bg-stone-100 px-3 py-1 text-xs text-stone-600"
-            >
-              {tag}
-            </li>
+    <div className="relative mx-auto max-w-xl">
+      <ProjectCard project={projects[index]} />
+
+      <div className="mt-6 flex items-center justify-center gap-6">
+        <button
+          type="button"
+          onClick={goPrev}
+          aria-label="Previous project"
+          className="flex h-9 w-9 items-center justify-center border border-stone-300 text-navy-900 transition hover:border-gold-500 hover:text-gold-600"
+        >
+          ←
+        </button>
+
+        <div className="flex items-center gap-2">
+          {projects.map((project, i) => (
+            <button
+              key={project.id}
+              type="button"
+              onClick={() => setIndex(i)}
+              aria-label={`Go to ${project.title}`}
+              className={`h-2 w-2 rounded-full transition ${
+                i === index ? "bg-gold-500" : "bg-stone-300"
+              }`}
+            />
           ))}
-        </ul>
-        {project.linkLabel ? (
-          <span className="mt-5 inline-flex w-fit items-center gap-1 text-sm font-medium text-gold-600">
-            {project.linkLabel}
-          </span>
-        ) : null}
-        {project.secondaryLink ? (
-          
-          <a  href={project.secondaryLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-2 inline-flex w-fit items-center gap-1 text-sm font-medium text-gold-600 underline-offset-4 hover:underline"
-          >
-            {project.secondaryLinkLabel ?? "View Project"} →
-          </a>
-        ) : null}
+        </div>
+
+        <button
+          type="button"
+          onClick={goNext}
+          aria-label="Next project"
+          className="flex h-9 w-9 items-center justify-center border border-stone-300 text-navy-900 transition hover:border-gold-500 hover:text-gold-600"
+        >
+          →
+        </button>
       </div>
-    </article>
+    </div>
   );
 }
