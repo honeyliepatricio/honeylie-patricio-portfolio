@@ -3,7 +3,7 @@ import Hero from "@/components/Hero";
 import TrustBadgeStrip from "@/components/TrustBadgeStrip";
 import Container from "@/components/Container";
 import SectionHeading from "@/components/SectionHeading";
-import ProjectCard from "@/components/ProjectCard";
+import ProjectCarousel from "@/components/ProjectCarousel";
 import CTASection from "@/components/CTASection";
 import { buildMetadata } from "@/lib/metadata";
 import { portfolioProjects } from "@/data/content";
@@ -50,10 +50,8 @@ export default function HomePage() {
               View full portfolio
             </Link>
           </div>
-          <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            {portfolioProjects.map((project) => (
-              <ProjectCard key={project.id} project={project} />
-            ))}
+          <div className="mt-8">
+            <ProjectCarousel projects={portfolioProjects} />
           </div>
         </Container>
       </section>
