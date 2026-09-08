@@ -172,6 +172,11 @@ export const portfolioProjects: PortfolioProject[] = [
     linkLabel: "My Works",
     secondaryLink: "https://web.facebook.com/cozyspotstaycation/",
     secondaryLinkLabel: "Cozy Spot Staycation",
+    images: [
+      "/images/portfolio/airbnb-operations/1.jpg",
+      "/images/portfolio/airbnb-operations/2.jpg",
+      "/images/portfolio/airbnb-operations/3.jpg",
+    ]
   },
   {
     id: "social-media-management",
