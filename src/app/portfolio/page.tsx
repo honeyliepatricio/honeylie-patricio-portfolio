@@ -29,7 +29,7 @@ export default function PortfolioPage() {
           </p>
         </div>
 
-        <div className="mt-12 flex flex-col gap-6">
+        <div className="mt-12 grid gap-6 md:grid-cols-2">
           {portfolioProjects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
