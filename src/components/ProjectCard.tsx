@@ -50,11 +50,8 @@ export default function ProjectCarousel({
           type="button"
           onClick={goNext}
           aria-label="Next project"
-          className="flex h-9 w-9 items-center justify-center border border-stone-300 text-navy-900 transition hover:border-gold-500 hover:text-gold-600"
-        >
-          →
-        </button>
-      </div>
-    </div>
+                    <div className="mt-8">
+            <ProjectCarousel projects={portfolioProjects} />
+          </div>
   );
 }
