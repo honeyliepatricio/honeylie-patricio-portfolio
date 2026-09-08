@@ -170,8 +170,6 @@ export const portfolioProjects: PortfolioProject[] = [
       "Customer Support",
     ],
     linkLabel: "My Works",
-    secondaryLink: "https://web.facebook.com/cozyspotstaycation/",
-    secondaryLinkLabel: "Cozy Spot Staycation",
     images: [
       "/images/portfolio/airbnb-operations/1.jpg",
       "/images/portfolio/airbnb-operations/2.jpg",
@@ -184,6 +182,9 @@ export const portfolioProjects: PortfolioProject[] = [
     description:
       "Ongoing management of a Facebook business page: designing graphics in Canva, writing captions, scheduling posts, and supporting promotional campaigns.",
     tags: ["Facebook", "Canva", "Content Scheduling"],
+    linkLabel: "My Works",
+    secondaryLink: "https://web.facebook.com/cozyspotstaycation/",
+    secondaryLinkLabel: "Cozy Spot Staycation",
   },
   {
     id: "medical-va-support",
