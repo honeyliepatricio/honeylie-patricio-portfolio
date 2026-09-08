@@ -1,42 +1,49 @@
 import { PortfolioProject } from "@/data/content";
+import ProjectGallery from "./ProjectGallery";
 
 export default function ProjectCard({ project }: { project: PortfolioProject }) {
   return (
-    <article className="flex h-full flex-col border border-stone-200 p-7">
-      {project.isLearningProject ? (
-        <span className="mb-4 inline-block w-fit border border-gold-500/50 px-3 py-1 text-xs font-medium text-gold-600">
-          Personal Learning Project
-        </span>
-      ) : null}
-      <h3 className="text-lg text-navy-900">{project.title}</h3>
-      <p className="mt-3 flex-1 text-sm leading-relaxed text-stone-600">
-        {project.description}
-      </p>
-      <ul className="mt-5 flex flex-wrap gap-2">
-        {project.tags.map((tag) => (
-          <li
-            key={tag}
-            className="bg-stone-100 px-3 py-1 text-xs text-stone-600"
+    <article className="grid overflow-hidden border border-stone-200 md:grid-cols-2">
+      <div className="flex flex-col p-7">
+        {project.isLearningProject ? (
+          <span className="mb-4 inline-block w-fit border border-gold-500/50 px-3 py-1 text-xs font-medium text-gold-600">
+            Personal Learning Project
+          </span>
+        ) : null}
+        <h3 className="text-lg text-navy-900">{project.title}</h3>
+        <p className="mt-3 flex-1 text-sm leading-relaxed text-stone-600">
+          {project.description}
+        </p>
+        <ul className="mt-5 flex flex-wrap gap-2">
+          {project.tags.map((tag) => (
+            <li
+              key={tag}
+              className="bg-stone-100 px-3 py-1 text-xs text-stone-600"
+            >
+              {tag}
+            </li>
+          ))}
+        </ul>
+        {project.linkLabel ? (
+          <span className="mt-5 inline-flex w-fit items-center gap-1 text-sm font-medium text-gold-600">
+            {project.linkLabel}
+          </span>
+        ) : null}
+        {project.secondaryLink ? (
+          
+            href={project.secondaryLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-2 inline-flex w-fit items-center gap-1 text-sm font-medium text-gold-600 underline-offset-4 hover:underline"
           >
-            {tag}
-          </li>
-        ))}
-      </ul>
-      {project.linkLabel ? (
-        <span className="mt-5 inline-flex w-fit items-center gap-1 text-sm font-medium text-gold-600">
-          {project.linkLabel}
-        </span>
-      ) : null}
-      {project.secondaryLink ? (
-        <a
-          href={project.secondaryLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-2 inline-flex w-fit items-center gap-1 text-sm font-medium text-gold-600 underline-offset-4 hover:underline"
-        >
-          {project.secondaryLinkLabel ?? "View Project"} →
-        </a>
-      ) : null}
+            {project.secondaryLinkLabel ?? "View Project"} →
+          </a>
+        ) : null}
+      </div>
+
+      <div className="border-t border-stone-200 md:border-l md:border-t-0">
+        <ProjectGallery images={project.images ?? []} alt={project.title} />
+      </div>
     </article>
   );
 }
