@@ -152,6 +152,7 @@ export type PortfolioProject = {
   linkLabel?: string;
   secondaryLink?: string;
   secondaryLinkLabel?: string;
+  images?: string[];
 };
 
 export const portfolioProjects: PortfolioProject[] = [
