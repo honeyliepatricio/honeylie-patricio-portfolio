@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { PortfolioProject } from "@/data/content";
 import ProjectCard from "@/components/ProjectCard";
 
@@ -15,6 +15,14 @@ export default function ProjectCarousel({
     setIndex((i) => (i === 0 ? projects.length - 1 : i - 1));
   const goNext = () =>
     setIndex((i) => (i === projects.length - 1 ? 0 : i + 1));
+
+  useEffect(() => {
+    if (projects.length <= 1) return;
+    const timer = setInterval(() => {
+      setIndex((i) => (i === projects.length - 1 ? 0 : i + 1));
+    }, 4000);
+    return () => clearInterval(timer);
+  }, [projects.length]);
 
   if (projects.length === 0) return null;
 
