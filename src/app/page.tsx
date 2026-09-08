@@ -3,11 +3,10 @@ import Hero from "@/components/Hero";
 import TrustBadgeStrip from "@/components/TrustBadgeStrip";
 import Container from "@/components/Container";
 import SectionHeading from "@/components/SectionHeading";
-import ServiceGroupRow from "@/components/ServiceGroupRow";
 import ProjectCard from "@/components/ProjectCard";
 import CTASection from "@/components/CTASection";
 import { buildMetadata } from "@/lib/metadata";
-import { serviceGroups, portfolioProjects } from "@/data/content";
+import { portfolioProjects } from "@/data/content";
 
 export const metadata = buildMetadata({
   title: "Healthcare & Operations Virtual Assistant",
@@ -34,11 +33,6 @@ export default function HomePage() {
             >
               View all services
             </Link>
-          </div>
-          <div className="mt-8">
-            {serviceGroups.slice(0, 3).map((group) => (
-              <ServiceGroupRow key={group.id} group={group} />
-            ))}
           </div>
         </Container>
       </section>
