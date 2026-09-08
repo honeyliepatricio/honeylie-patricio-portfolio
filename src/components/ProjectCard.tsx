@@ -31,7 +31,7 @@ export default function ProjectCard({ project }: { project: PortfolioProject }) 
         ) : null}
         {project.secondaryLink ? (
           
-            href={project.secondaryLink}
+          <a  href={project.secondaryLink}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-2 inline-flex w-fit items-center gap-1 text-sm font-medium text-gold-600 underline-offset-4 hover:underline"
