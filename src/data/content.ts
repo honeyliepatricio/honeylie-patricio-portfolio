@@ -157,11 +157,14 @@ export type PortfolioProject = {
 
 export const portfolioProjects: PortfolioProject[] = [
   {
-    id: "airbnb-operations",
-    title: "Airbnb & Staycation Operations",
+    id: "social-media-management",
+    title: "Social Media Management",
     description:
-      "Day-to-day management of reservations, calendars, and guest communication across active listings — plus coordinated check-in/check-out logistics and guest instructions for a consistent, low-friction arrival experience.",
+      "Ongoing management of a Facebook business page: designing graphics in Canva, writing captions, scheduling posts, and supporting promotional campaigns.",
     tags: [
+      "Facebook",
+      "Canva",
+      "Content Scheduling",
       "Reservations",
       "Calendar Management",
       "Guest Communication",
@@ -169,19 +172,6 @@ export const portfolioProjects: PortfolioProject[] = [
       "Guest Instructions",
       "Customer Support",
     ],
-    linkLabel: "My Works",
-    images: [
-      "/images/portfolio/airbnb-operations/1.jpg",
-      "/images/portfolio/airbnb-operations/2.jpg",
-      "/images/portfolio/airbnb-operations/3.jpg",
-    ]
-  },
-  {
-    id: "social-media-management",
-    title: "Social Media Management",
-    description:
-      "Ongoing management of a Facebook business page: designing graphics in Canva, writing captions, scheduling posts, and supporting promotional campaigns.",
-    tags: ["Facebook", "Canva", "Content Scheduling"],
     linkLabel: "My Works",
     secondaryLink: "https://web.facebook.com/cozyspotstaycation/",
     secondaryLinkLabel: "Cozy Spot Staycation",
